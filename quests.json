@@ -1,0 +1,101 @@
+{
+  "title": "Anatomy of Proof",
+  "subtitle": "Five moments that taught the law to hear the body",
+  "quests": [
+    {
+      "id": "bulkley-1693",
+      "number": 1,
+      "title": "The First Autopsy",
+      "year": 1693,
+      "place": "Madras, India",
+      "portrait": "assets/portraits/bulkley.jpg",
+      "portraitCaption": "Dr. Edward Bulkley",
+      "scene": "Fort St. George, Madras. August 28, 1693. James Wheeler — a member of the Madras Council — is dead. He was treated by Dr. Samuel Browne, whose assistant ground pearls in a pestle and mortar previously used for arsenic. The town suspects poisoning. The law has no way to prove it.",
+      "question": "You are Dr. Edward Bulkley. The court has no procedure for this. Do you open the body to find the truth?",
+      "choices": [
+        { "text": "Trust the suspicion — let the case go to trial", "outcome": "Browne would have been convicted on suspicion alone. Innocent or guilty, the law would have made a guess." },
+        { "text": "Walk away — this is not a physician's business", "outcome": "The case would have been decided by rumor. Justice would have been blind." },
+        { "text": "Open the body and let it speak", "outcome": "You performed the first complete medico-legal autopsy in India. The body told you there was no arsenic. Browne was acquitted." }
+      ],
+      "outcome": "Bulkley opens the body. No arsenic found. Samuel Browne is acquitted.",
+      "whatChanged": "The body becomes a legal witness. Forensic medicine in India begins on a hot August day in Madras, 1693.",
+      "whoBuiltOnThis": "Bulkley could only see. For 143 years, that's all a physician could do — look at the body and describe what he saw. It would take another invention to prove what the eye could not see."
+    },
+    {
+      "id": "marsh-1836",
+      "number": 2,
+      "title": "The Invisible Crime",
+      "year": 1836,
+      "place": "London, England",
+      "portrait": "assets/portraits/marsh.jpg",
+      "portraitCaption": "James Marsh",
+      "scene": "London, 1836. Arsenic poisoning is the perfect crime — invisible, tasteless, and almost impossible to prove. Courts convict on suspicion or not at all. A chemist named James Marsh is called to testify in a poisoning case. He can describe the symptoms, but he cannot prove the poison was there.",
+      "question": "You are James Marsh. You know arsenic is present. You cannot prove it to a jury. What do you do?",
+      "choices": [
+        { "text": "Testify on symptoms alone", "outcome": "The jury would weigh your word against the defense's denial — exactly the state of forensic medicine for 143 years." },
+        { "text": "Give up — chemistry can't help here", "outcome": "Poisoners would continue to walk free. The perfect crime would remain perfect." },
+        { "text": "Find a way to make arsenic visible", "outcome": "You develop the Marsh Test — mixing the suspected sample with hydrogen gas, which produces a mirror-like deposit of arsenic on cold glass. A tiny amount becomes unmistakable." }
+      ],
+      "outcome": "Marsh invents a test that turns invisible arsenic into a visible mirror on glass. Poison becomes provable.",
+      "whatChanged": "Forensic medicine gains its first chemical tool. The invisible becomes visible.",
+      "whoBuiltOnThis": "The Marsh Test could detect arsenic. But a test in a lab is not the same as evidence in a courtroom. Someone had to bridge the two — a toxicologist willing to testify."
+    },
+    {
+      "id": "orfila-1840",
+      "number": 3,
+      "title": "The Chemist in the Courtroom",
+      "year": 1840,
+      "place": "Paris, France",
+      "portrait": "assets/portraits/orfila.jpg",
+      "portraitCaption": "Mathieu Orfila",
+      "scene": "Paris, 1840. The Lafarge trial — a widow accused of poisoning her husband with arsenic. The prosecution has the Marsh Test. The defense has skeptics who say the test proves nothing. The courtroom has never seen a chemist testify as an authority before.",
+      "question": "You are Mathieu Orfila. You have the test results. Do you testify?",
+      "choices": [
+        { "text": "Present the evidence and let the jury decide", "outcome": "You explain the Marsh Test step by step — what it detects, how reliable it is, what the results mean. The jury convicts. Forensic toxicology enters the courtroom for the first time." },
+        { "text": "Decline — chemists shouldn't testify in court", "outcome": "The test exists, but no one can explain it to a jury. Poisoners still walk free. The Marsh Test sits in a lab, unused." },
+        { "text": "Testify only in writing", "outcome": "A written report carries less weight than a spoken expert. The jury remains uncertain. The case is undecided." }
+      ],
+      "outcome": "Orfila testifies. Lafarge is convicted. Forensic toxicology enters the courtroom.",
+      "whatChanged": "Poison is no longer a matter of suspicion. It can be proven, and the proof can be trusted by a jury.",
+      "whoBuiltOnThis": "Chemistry could now prove what happened. But the next question was who did it. Proving identity — the fingerprint — would be the next revolution."
+    },
+    {
+      "id": "henry-1897",
+      "number": 4,
+      "title": "The Body's Signature",
+      "year": "1858-1897",
+      "place": "Calcutta and London",
+      "portrait": "assets/portraits/henry.jpg",
+      "portraitCaption": "Sir Edward Richard Henry",
+      "scene": "Calcutta, 1858. William Herschel begins fingerprinting locals as a form of signature. Thirty-nine years later, in London, Edward Richard Henry turns the idea into a system — a classification method that any police officer can use. Fingerprints are unique, permanent, and impossible to forge. The question is whether the law will accept them.",
+      "question": "You are Edward Richard Henry. Herschel proved fingerprints work. Now you must make them usable — for every crime scene, every officer, every court.",
+      "choices": [
+        { "text": "Trust photographs and witness testimony", "outcome": "Identity remains unprovable. Criminal records stay unreliable. The same person can be arrested twice under different names." },
+        { "text": "Use anthropometry — body measurements", "outcome": "Body measurements work in theory but fail in practice. Two measurements can match by accident. The method is eventually abandoned." },
+        { "text": "Build a classification system for fingerprints", "outcome": "You create the Henry Classification System — a way to file, search, and match fingerprints at scale. Scotland Yard adopts it in 1901. The method spreads worldwide." }
+      ],
+      "outcome": "Henry creates the classification system. Fingerprints become the first globally adopted forensic identification technique.",
+      "whatChanged": "The body becomes evidence of identity. Every crime scene now has the potential to name a suspect — and the method started in India.",
+      "whoBuiltOnThis": "Fingerprints prove identity. But every other trace a criminal leaves — a hair, a fiber, a fleck of paint — was still invisible to the law. It would take another century to make them visible."
+    },
+    {
+      "id": "verma-2013",
+      "number": 5,
+      "title": "The Survivor's Turn",
+      "year": 2013,
+      "place": "Delhi, India",
+      "portrait": "assets/portraits/verma.jpg",
+      "portraitCaption": "Justice J.S. Verma",
+      "scene": "Delhi, December 2012. A young woman is assaulted on a bus. She dies. The country erupts in protest. The law has historically treated the survivor as evidence — her body examined, questioned, doubted. The Justice Verma Committee is formed to rewrite the framework.",
+      "question": "You are Justice J.S. Verma. Do you reform the procedure, or transform its purpose?",
+      "choices": [
+        { "text": "Tighten the existing procedure", "outcome": "The framework remains — but the survivor is still examined, still doubted, still treated as evidence." },
+        { "text": "Add harsher penalties only", "outcome": "Punishment increases, but the process of examination remains the same. The survivor still testifies through her body, in a system designed for the accused." },
+        { "text": "Rewrite the framework around survivor care", "outcome": "The Committee recommends sweeping reforms. The Criminal Law Amendment Act 2013 enacts them. The MoHFW 2014 Guidelines follow — survivor-centered care, informed consent, and the ban on the two-finger test." }
+      ],
+      "outcome": "The Committee recommends sweeping reforms. Parliament enacts the Criminal Law Amendment Act 2013. The MoHFW 2014 Guidelines follow.",
+      "whatChanged": "The law shifts from evidence-collection to survivor care. The two-finger test is banned. The framework prioritizes dignity, consent, and recovery.",
+      "whoBuiltOnThis": "The 2013 Amendment and the BNSS 2023 are the current framework. The quest ends here. But the story continues with every case that follows."
+    }
+  ]
+}
