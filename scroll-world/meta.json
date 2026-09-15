@@ -1,0 +1,10 @@
+{
+  "status": "building",
+  "sourceSessionId": "2d56586a-fbc5-4aff-a000-71a58422c9a1",
+  "sourceTurnId": "b3e7936e-a982-4ae3-a255-2e924f26f39f",
+  "title": "Corpus Delicti",
+  "serve": {
+    "kind": "static",
+    "entry": "index.html"
+  }
+}

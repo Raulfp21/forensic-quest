@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Corpus Delicti — three rooms in the history of forensic medicine</title>
+  <meta name="description" content="Scroll to fly through three rooms in the history of forensic medicine: Madras 1693, London 1836, Paris 1840." />
+  <style>
+    :root, .sw-root {
+      --sw-bg: #E8DCC0;
+      --sw-ink: #2E211A;
+      --sw-ink-soft: #6B563C;
+      --sw-accent: #7A2E24;
+      --sw-font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+      --sw-font-body: Georgia, "Times New Roman", Times, serif;
+    }
+
+    .sw-load {
+      position: fixed; inset: 0; z-index: 100;
+      display: grid; place-content: center; gap: 18px;
+      background: var(--sw-bg); color: var(--sw-ink);
+      font-family: var(--sw-font-body); text-align: center; padding: 24px;
+      opacity: 0; transition: opacity .45s ease;
+    }
+    .sw-load.is-ready { opacity: 1; }
+    .sw-load.is-done  { opacity: 0; pointer-events: none; }
+    .sw-load__title { font-family: var(--sw-font-display); font-size: 1.6rem; letter-spacing: .06em; margin: 0; }
+    .sw-load__sub { font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--sw-ink-soft); margin: -8px 0 12px; }
+    .sw-load__bar {
+      width: min(64vw, 320px); height: 3px; margin: 0 auto; overflow: hidden;
+      background: color-mix(in srgb, var(--sw-accent) 18%, transparent);
+    }
+    .sw-load__fill { display: block; height: 100%; width: 0; background: var(--sw-accent); transition: width .2s linear; }
+    .sw-load__pct  { font-family: ui-monospace, Menlo, monospace; font-size: .78rem; color: var(--sw-ink-soft); }
+    .sw-load__note { font-size: .78rem; color: var(--sw-ink-soft); opacity: 0; transition: opacity .3s; }
+    .sw-load__note.is-shown { opacity: 1; }
+    @media (prefers-reduced-motion: reduce) { .sw-load, .sw-load__fill { transition: none; } }
+  </style>
+</head>
+<body>
+  <div id="top"></div>
+
+  <!-- No <h1> here: this overlay is removed after load. The page's <h1> is the first
+       section's `title`, rendered by the engine. -->
+  <div id="sw-load" class="sw-load" role="progressbar" aria-label="Loading the world"
+       aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <p class="sw-load__title">Corpus Delicti</p>
+    <p class="sw-load__sub">Three rooms in the history of forensic medicine</p>
+    <span class="sw-load__bar"><span class="sw-load__fill"></span></span>
+    <p class="sw-load__pct">0%</p>
+    <p class="sw-load__note" aria-live="polite"></p>
+  </div>
+
+  <div id="world"></div>
+
+  <script src="scrub-engine.js"></script>
+  <script src="preload-gate.js"></script>
+  <script>
+    var SW_CONFIG = {
+      brand: { name: 'Corpus Delicti', href: '#top' },
+      hint: 'Three rooms in the history of forensic medicine',
+      nav: true,
+      atmosphere: true,
+      diveScroll: 1.35,
+      connScroll: 0.9,
+      sections: [
+        {
+          id: 'madras', label: 'Madras, 1693',
+          still: 'assets/madras.webp',
+          clip: 'assets/vid/madras.mp4',
+          clipMobile: 'assets/vid/madras-m.mp4',
+          accent: '#7A2E24',
+          eyebrow: 'Madras · 1693',
+          title: 'The first incision in India.',
+          body: 'A Company surgeon lifts a blade over a table the law has never asked anyone to read.',
+          facts: [['Year', '1693'], ['Place', 'Fort St. George, Madras']],
+          tags: ['East India Company', 'The first autopsy'],
+        },
+        {
+          id: 'london', label: 'London, 1836',
+          still: 'assets/london.webp',
+          clip: 'assets/vid/london.mp4',
+          clipMobile: 'assets/vid/london-m.mp4',
+          accent: '#B98A3C',
+          eyebrow: 'London · 1836',
+          title: 'A silver mirror on cold glass.',
+          body: 'James Marsh makes arsenic visible, and poison loses the dark it hid in.',
+          facts: [['Year', '1836'], ['Method', 'The Marsh test']],
+          tags: ['Arsenic', 'A mirror of metal'],
+        },
+        {
+          id: 'paris', label: 'Paris, 1840',
+          still: 'assets/paris.webp',
+          clip: 'assets/vid/paris.mp4',
+          clipMobile: 'assets/vid/paris-m.mp4',
+          accent: '#7A2E24',
+          eyebrow: 'Paris · 1840',
+          title: 'Orfila takes the stand.',
+          body: 'The first toxicologist walks a courtroom through a glass plate, and testimony becomes evidence.',
+          facts: [['Year', '1840'], ['Discipline', 'Toxicology']],
+          tags: ['Expert testimony', 'The glass plate'],
+        },
+      ],
+      connectors: [
+        'assets/vid/conn1.mp4',
+        'assets/vid/conn2.mp4',
+      ],
+      connectorsMobile: [
+        'assets/vid/conn1-m.mp4',
+        'assets/vid/conn2-m.mp4',
+      ],
+    };
+
+    // Scrolling advances the camera, so the flight IS the page's main content and the
+    // preload gate is required: it loads every still and every clip before it reveals.
+    var overlay = document.getElementById('sw-load');
+    mountWorldWithPreload({
+      container: document.getElementById('world'),
+      config: SW_CONFIG,
+      overlay: overlay,
+      fill: overlay.querySelector('.sw-load__fill'),
+      pct:  overlay.querySelector('.sw-load__pct'),
+      note: overlay.querySelector('.sw-load__note'),
+    });
+  </script>
+</body>
+</html>
