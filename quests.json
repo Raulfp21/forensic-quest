@@ -1,101 +1,391 @@
 {
   "title": "Anatomy of Proof",
-  "subtitle": "Five moments that taught the law to hear the body",
+  "subtitle": "Five scenes from the history of forensic medicine",
   "quests": [
     {
       "id": "bulkley-1693",
       "number": 1,
       "title": "The First Autopsy",
-      "year": 1693,
+      "year": "1693",
       "place": "Madras, India",
+      "yourRole": "Dr. Edward Bulkley, physician at Fort St. George",
       "portrait": "assets/portraits/bulkley.jpg",
       "portraitCaption": "Dr. Edward Bulkley",
-      "scene": "Fort St. George, Madras. August 28, 1693. James Wheeler — a member of the Madras Council — is dead. He was treated by Dr. Samuel Browne, whose assistant ground pearls in a pestle and mortar previously used for arsenic. The town suspects poisoning. The law has no way to prove it.",
-      "question": "You are Dr. Edward Bulkley. The court has no procedure for this. Do you open the body to find the truth?",
-      "choices": [
-        { "text": "Trust the suspicion — let the case go to trial", "outcome": "Browne would have been convicted on suspicion alone. Innocent or guilty, the law would have made a guess." },
-        { "text": "Walk away — this is not a physician's business", "outcome": "The case would have been decided by rumor. Justice would have been blind." },
-        { "text": "Open the body and let it speak", "outcome": "You performed the first complete medico-legal autopsy in India. The body told you there was no arsenic. Browne was acquitted." }
+      "beats": [
+        {
+          "id": "b1",
+          "speaker": "Clerk",
+          "text": "Doctor Bulkley. The Governor has sent word. The town says Browne poisoned Wheeler — that the pearls he ground were laced with arsenic. The Governor asks what you intend to do.",
+          "options": [
+            { "text": "Tell him I will open the body at dawn.", "next": "b2_open" },
+            { "text": "Tell him the law will decide. I will not interfere.", "next": "b2_refuse" },
+            { "text": "Tell him I must examine the pestle first.", "next": "b2_pestle" }
+          ]
+        },
+        {
+          "id": "b2_open",
+          "speaker": "Clerk",
+          "text": "Open the body? Doctor — no physician in Madras has ever done such a thing. The Governor will ask whether you can swear the body will tell the truth.",
+          "options": [
+            { "text": "Tell him I can swear only to what I see. That is enough.", "next": "b3_decide" },
+            { "text": "Tell him the dead speak plainly. It is the living who lie.", "next": "b3_decide" }
+          ]
+        },
+        {
+          "id": "b2_refuse",
+          "speaker": "Clerk",
+          "text": "The law will decide? Doctor, the law has no physician. It has rumor, and it has confession. If you will not look, the town will decide — and they have already decided.",
+          "options": [
+            { "text": "Then let them. It is not my affair.", "next": "b3_decide" },
+            { "text": "Wait. Bring me the pestle, and a light.", "next": "b2_pestle" }
+          ]
+        },
+        {
+          "id": "b2_pestle",
+          "speaker": "Clerk",
+          "text": "The pestle is brought. It is clean — scoured after the pearls were ground. But the mortar holds a faint grey residue in the cracks. You know arsenic leaves just such a mark. The clerks watch you.",
+          "options": [
+            { "text": "This tells me nothing. We must open the body.", "next": "b3_decide" },
+            { "text": "This is enough. Tell the Governor the case is closed.", "next": "b3_decide" }
+          ]
+        },
+        {
+          "id": "b3_decide",
+          "speaker": "Narrator",
+          "text": "The room is silent. Two assistants wait with the table. The clerk's quill hovers over the Governor's letter. This is the moment — whatever you do now will become the standard for every physician who follows you.",
+          "options": [
+            { "text": "Open the body.", "next": "b4_open_body" },
+            { "text": "Close the case and let it be decided by others.", "next": "b4_no_body" }
+          ]
+        },
+        {
+          "id": "b4_open_body",
+          "speaker": "Narrator",
+          "text": "You open James Wheeler's body. There is no arsenic in the stomach, no unusual discoloration, no sign of poison. The truth is plain: Browne did not poison him. By dawn, the whole town knows a body was opened in Madras — and that it had spoken.",
+          "options": [
+            { "text": "Add this to my case file.", "next": "END", "ending": "open" }
+          ]
+        },
+        {
+          "id": "b4_no_body",
+          "speaker": "Narrator",
+          "text": "You close the case. Browne is tried on rumor. He is acquitted, but only because no one could prove what they suspected. No precedent is set. No body speaks. It will be another century before a physician in India dares to open a body in a legal case.",
+          "options": [
+            { "text": "Add this to my case file.", "next": "END", "ending": "closed" }
+          ]
+        }
       ],
-      "outcome": "Bulkley opens the body. No arsenic found. Samuel Browne is acquitted.",
-      "whatChanged": "The body becomes a legal witness. Forensic medicine in India begins on a hot August day in Madras, 1693.",
-      "whoBuiltOnThis": "Bulkley could only see. For 143 years, that's all a physician could do — look at the body and describe what he saw. It would take another invention to prove what the eye could not see."
+      "outcome": "Bulkley opens the body. No arsenic found. Samuel Browne is acquitted. The first complete medico-legal autopsy in India has been performed.",
+      "whatChanged": "The body becomes a legal witness. Forensic medicine in India begins in Madras, 1693.",
+      "notebookEntry": "Madras, 1693 — The first autopsy in India. Bulkley opened Wheeler. No arsenic. Browne walked free. The body had testified."
     },
     {
       "id": "marsh-1836",
       "number": 2,
       "title": "The Invisible Crime",
-      "year": 1836,
+      "year": "1836",
       "place": "London, England",
+      "yourRole": "James Marsh, chemist at the Royal Arsenal",
       "portrait": "assets/portraits/marsh.jpg",
       "portraitCaption": "James Marsh",
-      "scene": "London, 1836. Arsenic poisoning is the perfect crime — invisible, tasteless, and almost impossible to prove. Courts convict on suspicion or not at all. A chemist named James Marsh is called to testify in a poisoning case. He can describe the symptoms, but he cannot prove the poison was there.",
-      "question": "You are James Marsh. You know arsenic is present. You cannot prove it to a jury. What do you do?",
-      "choices": [
-        { "text": "Testify on symptoms alone", "outcome": "The jury would weigh your word against the defense's denial — exactly the state of forensic medicine for 143 years." },
-        { "text": "Give up — chemistry can't help here", "outcome": "Poisoners would continue to walk free. The perfect crime would remain perfect." },
-        { "text": "Find a way to make arsenic visible", "outcome": "You develop the Marsh Test — mixing the suspected sample with hydrogen gas, which produces a mirror-like deposit of arsenic on cold glass. A tiny amount becomes unmistakable." }
+      "beats": [
+        {
+          "id": "b1",
+          "speaker": "Barrister",
+          "text": "Mr. Marsh. The Crown has a case against a man for poisoning his wife. We have symptoms — vomiting, cramps, collapse. We have motive. But we cannot show the arsenic. The test is unreliable. What will you tell the court?",
+          "options": [
+            { "text": "I will testify on symptoms alone. The court can judge.", "next": "b2_symptoms" },
+            { "text": "I need time. There is a method I have been working on.", "next": "b2_working" },
+            { "text": "I cannot help you. The test is not ready.", "next": "b2_refuse" }
+          ]
+        },
+        {
+          "id": "b2_symptoms",
+          "speaker": "Barrister",
+          "text": "Symptoms? Any doctor can name symptoms. The defense will say she died of cholera. Without evidence of the poison itself, the jury will not convict. Is there nothing more you can do?",
+          "options": [
+            { "text": "Then give me a week. I will find a way.", "next": "b3_decide" },
+            { "text": "Then the man will walk. That is the state of the law.", "next": "b3_decide" }
+          ]
+        },
+        {
+          "id": "b2_working",
+          "speaker": "Barrister",
+          "text": "Tell me of it. If it works, you will save this case — and every case that follows.",
+          "options": [
+            { "text": "I pass hydrogen through the sample. If arsenic is present, a mirror forms on cold glass.", "next": "b3_decide" },
+            { "text": "It is too new. The court will not trust it.", "next": "b3_decide" }
+          ]
+        },
+        {
+          "id": "b2_refuse",
+          "speaker": "Barrister",
+          "text": "Then you leave us with nothing. The law will decide on character and rumor. That is how it has always been. Are you certain that is what you wish?",
+          "options": [
+            { "text": "No. Give me a week.", "next": "b3_decide" },
+            { "text": "Yes. This is not my affair.", "next": "b3_decide" }
+          ]
+        },
+        {
+          "id": "b3_decide",
+          "speaker": "Narrator",
+          "text": "You return to your bench. The apparatus is simple: a flask, a tube, a flame, and a piece of cold glass. You have tested it a dozen times. It works. But it is new. The courtroom has never seen chemistry spoken of as evidence.",
+          "options": [
+            { "text": "Perfect the method and bring it to court.", "next": "b4_invented" },
+            { "text": "Put the apparatus aside. It is not ready.", "next": "b4_shelved" }
+          ]
+        },
+        {
+          "id": "b4_invented",
+          "speaker": "Narrator",
+          "text": "You bring the apparatus into court. You pass the sample through the tube. On the cold glass, a mirror of metallic arsenic forms. The jury sees the poison with its own eyes. The man is convicted. From this day, poison is no longer invisible.",
+          "options": [
+            { "text": "Add this to my case file.", "next": "END", "ending": "invented" }
+          ]
+        },
+        {
+          "id": "b4_shelved",
+          "speaker": "Narrator",
+          "text": "You put the apparatus aside. The case proceeds on symptoms and suspicion. The verdict is uncertain. It will be another decade before the Marsh Test is used in an English court — and by then, other poisoners will have walked free.",
+          "options": [
+            { "text": "Add this to my case file.", "next": "END", "ending": "shelved" }
+          ]
+        }
       ],
-      "outcome": "Marsh invents a test that turns invisible arsenic into a visible mirror on glass. Poison becomes provable.",
+      "outcome": "Marsh develops the test. Poison becomes visible — a mirror of metallic arsenic on cold glass.",
       "whatChanged": "Forensic medicine gains its first chemical tool. The invisible becomes visible.",
-      "whoBuiltOnThis": "The Marsh Test could detect arsenic. But a test in a lab is not the same as evidence in a courtroom. Someone had to bridge the two — a toxicologist willing to testify."
+      "notebookEntry": "London, 1836 — Marsh built a test that turns arsenic into a silver mirror on glass. Chemistry extends the eye."
     },
     {
       "id": "orfila-1840",
       "number": 3,
       "title": "The Chemist in the Courtroom",
-      "year": 1840,
+      "year": "1840",
       "place": "Paris, France",
+      "yourRole": "Mathieu Orfila, forensic toxicologist",
       "portrait": "assets/portraits/orfila.jpg",
       "portraitCaption": "Mathieu Orfila",
-      "scene": "Paris, 1840. The Lafarge trial — a widow accused of poisoning her husband with arsenic. The prosecution has the Marsh Test. The defense has skeptics who say the test proves nothing. The courtroom has never seen a chemist testify as an authority before.",
-      "question": "You are Mathieu Orfila. You have the test results. Do you testify?",
-      "choices": [
-        { "text": "Present the evidence and let the jury decide", "outcome": "You explain the Marsh Test step by step — what it detects, how reliable it is, what the results mean. The jury convicts. Forensic toxicology enters the courtroom for the first time." },
-        { "text": "Decline — chemists shouldn't testify in court", "outcome": "The test exists, but no one can explain it to a jury. Poisoners still walk free. The Marsh Test sits in a lab, unused." },
-        { "text": "Testify only in writing", "outcome": "A written report carries less weight than a spoken expert. The jury remains uncertain. The case is undecided." }
+      "beats": [
+        {
+          "id": "b1",
+          "speaker": "Judge",
+          "text": "Monsieur Orfila. You have tested the sample from Madame Lafarge's household. You have produced a mirror on glass. The defense says a chemist's trick proves nothing. What do you tell this court?",
+          "options": [
+            { "text": "I will explain the test. Step by step, so the jury may judge.", "next": "b2_explain" },
+            { "text": "I will submit my report in writing. That should suffice.", "next": "b2_written" },
+            { "text": "I cannot testify. This is a matter for physicians.", "next": "b2_refuse" }
+          ]
+        },
+        {
+          "id": "b2_explain",
+          "speaker": "Defense Counsel",
+          "text": "Monsieur. You say the mirror is arsenic. How do we know it is not antimony, or bismuth, or some residue from your own apparatus? You ask the court to trust your eyes. Is that not the very thing we have always refused?",
+          "options": [
+            { "text": "No. I ask the court to trust chemistry — which any other chemist may repeat.", "next": "b3_decide" },
+            { "text": "You are right. My testimony alone is not enough.", "next": "b3_decide" }
+          ]
+        },
+        {
+          "id": "b2_written",
+          "speaker": "Judge",
+          "text": "A written report? The jury must weigh your words. They cannot ask you questions of a paper. If the defense disputes your finding, who answers? The report is silent.",
+          "options": [
+            { "text": "Then I will testify in person.", "next": "b3_decide" },
+            { "text": "Let the report stand as it is.", "next": "b3_decide" }
+          ]
+        },
+        {
+          "id": "b2_refuse",
+          "speaker": "Judge",
+          "text": "Then we have a test that no one will defend in court. What use is a proof that cannot be spoken? The widow will be tried on reputation, not on evidence. Think again.",
+          "options": [
+            { "text": "You are right. I will testify.", "next": "b3_decide" },
+            { "text": "That is not my responsibility.", "next": "b3_decide" }
+          ]
+        },
+        {
+          "id": "b3_decide",
+          "speaker": "Narrator",
+          "text": "The courtroom is silent. Every eye is on you. To speak is to invent a role that does not yet exist — the expert witness. To decline is to let poison remain a matter of rumor. This is the moment the courtroom learns whether science can testify.",
+          "options": [
+            { "text": "Take the stand. Explain the test.", "next": "b4_testified" },
+            { "text": "Remain silent. Let the court decide without you.", "next": "b4_silent" }
+          ]
+        },
+        {
+          "id": "b4_testified",
+          "speaker": "Narrator",
+          "text": "You take the stand. You explain the Marsh Test in plain language. You pass the sample through the tube. The jury sees the mirror. They see arsenic — not a chemist's claim, but a fact they can witness. Madame Lafarge is convicted. From this day, chemistry is evidence.",
+          "options": [
+            { "text": "Add this to my case file.", "next": "END", "ending": "testified" }
+          ]
+        },
+        {
+          "id": "b4_silent",
+          "speaker": "Narrator",
+          "text": "You remain seated. The court decides on reputation, rumor, and character. The verdict is uncertain. It will be years before chemistry is admitted as evidence in a French courtroom — and other poisoners will benefit from the delay.",
+          "options": [
+            { "text": "Add this to my case file.", "next": "END", "ending": "silent" }
+          ]
+        }
       ],
       "outcome": "Orfila testifies. Lafarge is convicted. Forensic toxicology enters the courtroom.",
-      "whatChanged": "Poison is no longer a matter of suspicion. It can be proven, and the proof can be trusted by a jury.",
-      "whoBuiltOnThis": "Chemistry could now prove what happened. But the next question was who did it. Proving identity — the fingerprint — would be the next revolution."
+      "whatChanged": "Poison is no longer a matter of suspicion. It can be proven — and the proof can be trusted by a jury.",
+      "notebookEntry": "Paris, 1840 — Orfila carried the Marsh Test into court. Detection alone is not evidence; someone must make it legible to the jury."
     },
     {
       "id": "henry-1897",
       "number": 4,
       "title": "The Body's Signature",
-      "year": "1858-1897",
+      "year": "1858–1897",
       "place": "Calcutta and London",
+      "yourRole": "Edward Richard Henry, police administrator",
       "portrait": "assets/portraits/henry.jpg",
       "portraitCaption": "Sir Edward Richard Henry",
-      "scene": "Calcutta, 1858. William Herschel begins fingerprinting locals as a form of signature. Thirty-nine years later, in London, Edward Richard Henry turns the idea into a system — a classification method that any police officer can use. Fingerprints are unique, permanent, and impossible to forge. The question is whether the law will accept them.",
-      "question": "You are Edward Richard Henry. Herschel proved fingerprints work. Now you must make them usable — for every crime scene, every officer, every court.",
-      "choices": [
-        { "text": "Trust photographs and witness testimony", "outcome": "Identity remains unprovable. Criminal records stay unreliable. The same person can be arrested twice under different names." },
-        { "text": "Use anthropometry — body measurements", "outcome": "Body measurements work in theory but fail in practice. Two measurements can match by accident. The method is eventually abandoned." },
-        { "text": "Build a classification system for fingerprints", "outcome": "You create the Henry Classification System — a way to file, search, and match fingerprints at scale. Scotland Yard adopts it in 1901. The method spreads worldwide." }
+      "beats": [
+        {
+          "id": "b1",
+          "speaker": "Commissioner",
+          "text": "Mr. Henry. We have a million criminal records. Photographs fail. Measurements fail. We have just discovered two prisoners with identical Bertillon measurements — the system cannot tell them apart. What do you propose?",
+          "options": [
+            { "text": "Give me time. There is a method from India I have been studying.", "next": "b2_india" },
+            { "text": "We should improve the photographs. Better lighting, better angles.", "next": "b2_photos" },
+            { "text": "There is nothing more to be done. The system is exhausted.", "next": "b2_giveup" }
+          ]
+        },
+        {
+          "id": "b2_india",
+          "speaker": "Commissioner",
+          "text": "From India? You mean the fingerprints Herschel collected in Bengal. They are curious, but no one has used them to identify criminals. How would a constable match a print from a crime scene against a million records?",
+          "options": [
+            { "text": "By classifying them. I have a scheme — patterns, loops, whorls, arches.", "next": "b3_decide" },
+            { "text": "I do not know yet. That is what I propose to work out.", "next": "b3_decide" }
+          ]
+        },
+        {
+          "id": "b2_photos",
+          "speaker": "Commissioner",
+          "text": "Better photographs? We have tried that. A shaved moustache, a new beard, a change of weight, and the same man becomes a stranger. Photography is not identity. It is appearance.",
+          "options": [
+            { "text": "Then we need a system that does not depend on appearance.", "next": "b2_india" },
+            { "text": "Then we must accept the limit.", "next": "b3_decide" }
+          ]
+        },
+        {
+          "id": "b2_giveup",
+          "speaker": "Commissioner",
+          "text": "Exhausted? A million records and no way to tell two men apart. That is not a system — it is a filing cabinet. If we cannot identify the criminal, we cannot convict him. Find a better way.",
+          "options": [
+            { "text": "Then I will. Give me the files.", "next": "b2_india" },
+            { "text": "I have nothing more to offer.", "next": "b3_decide" }
+          ]
+        },
+        {
+          "id": "b3_decide",
+          "speaker": "Narrator",
+          "text": "You spend the next months in the archive. You sort fingerprints by pattern — arches, loops, whorls. You build a classification scheme. It is crude at first, then workable. When you finish, a constable can match a print against a million records in minutes.",
+          "options": [
+            { "text": "Adopt the system. Train the officers.", "next": "b4_classified" },
+            { "text": "The scheme is too new. Set it aside.", "next": "b4_setaside" }
+          ]
+        },
+        {
+          "id": "b4_classified",
+          "speaker": "Narrator",
+          "text": "Scotland Yard adopts your system in 1901. Within a decade, every police force in the world uses it. The fingerprint — unique, permanent, and unchangeable — becomes the first globally accepted forensic identification method. The body carries a signature, and the law can read it.",
+          "options": [
+            { "text": "Add this to my case file.", "next": "END", "ending": "classified" }
+          ]
+        },
+        {
+          "id": "b4_setaside",
+          "speaker": "Narrator",
+          "text": "You set the scheme aside. The photographs and measurements remain the standard. The two prisoners with identical measurements are released. It will be years before another administrator proposes fingerprints — and many more crimes will go unsolved in the meantime.",
+          "options": [
+            { "text": "Add this to my case file.", "next": "END", "ending": "setaside" }
+          ]
+        }
       ],
       "outcome": "Henry creates the classification system. Fingerprints become the first globally adopted forensic identification technique.",
-      "whatChanged": "The body becomes evidence of identity. Every crime scene now has the potential to name a suspect — and the method started in India.",
-      "whoBuiltOnThis": "Fingerprints prove identity. But every other trace a criminal leaves — a hair, a fiber, a fleck of paint — was still invisible to the law. It would take another century to make them visible."
+      "whatChanged": "The body becomes evidence of identity. Every crime scene now has the potential to name a suspect.",
+      "notebookEntry": "London, 1897 — Henry classified fingerprints. The body carries a signature; the trick is making it legible to a system."
     },
     {
       "id": "verma-2013",
       "number": 5,
       "title": "The Survivor's Turn",
-      "year": 2013,
+      "year": "2013",
       "place": "Delhi, India",
+      "yourRole": "Justice J.S. Verma, chair of the reform committee",
       "portrait": "assets/portraits/verma.jpg",
       "portraitCaption": "Justice J.S. Verma",
-      "scene": "Delhi, December 2012. A young woman is assaulted on a bus. She dies. The country erupts in protest. The law has historically treated the survivor as evidence — her body examined, questioned, doubted. The Justice Verma Committee is formed to rewrite the framework.",
-      "question": "You are Justice J.S. Verma. Do you reform the procedure, or transform its purpose?",
-      "choices": [
-        { "text": "Tighten the existing procedure", "outcome": "The framework remains — but the survivor is still examined, still doubted, still treated as evidence." },
-        { "text": "Add harsher penalties only", "outcome": "Punishment increases, but the process of examination remains the same. The survivor still testifies through her body, in a system designed for the accused." },
-        { "text": "Rewrite the framework around survivor care", "outcome": "The Committee recommends sweeping reforms. The Criminal Law Amendment Act 2013 enacts them. The MoHFW 2014 Guidelines follow — survivor-centered care, informed consent, and the ban on the two-finger test." }
+      "beats": [
+        {
+          "id": "b1",
+          "speaker": "Committee Member",
+          "text": "Justice Verma. We have four months. The country is demanding reform. The framework we have was written in 1860 and 1872. It treats the survivor as evidence — examined, questioned, doubted. What do we recommend?",
+          "options": [
+            { "text": "We tighten the existing procedure. Harsher penalties, faster courts.", "next": "b2_tighten" },
+            { "text": "We rewrite the framework around survivor care.", "next": "b2_rewrite" },
+            { "text": "We need to hear from survivors first. Bring me their testimonies.", "next": "b2_testimonies" }
+          ]
+        },
+        {
+          "id": "b2_tighten",
+          "speaker": "Committee Member",
+          "text": "Harsher penalties. Faster courts. But the process of examination remains the same. The survivor still testifies through her body. The medical examination still uses methods that have no clinical purpose. Is that enough?",
+          "options": [
+            { "text": "It is a start. We can refine later.", "next": "b3_decide" },
+            { "text": "No. It is not enough. Show me the testimonies.", "next": "b2_testimonies" }
+          ]
+        },
+        {
+          "id": "b2_rewrite",
+          "speaker": "Committee Member",
+          "text": "Rewrite around survivor care? That would mean the medical examination serves the survivor first — informed consent, single point of care, psychological support. It would also mean banning procedures that have no evidentiary value. Some will call it a break from tradition.",
+          "options": [
+            { "text": "Then let them. The law is for the living.", "next": "b3_decide" },
+            { "text": "Let me see the testimonies first. I want to be certain.", "next": "b2_testimonies" }
+          ]
+        },
+        {
+          "id": "b2_testimonies",
+          "speaker": "Committee Member",
+          "text": "Hundreds of survivors described the examination as a second trauma. Invasive procedures. The two-finger test — used routinely, despite having no evidentiary value. Many said they would rather not report than submit to it. This is the system we are asked to reform.",
+          "options": [
+            { "text": "Then we rewrite it. Around care, not evidence.", "next": "b3_decide" },
+            { "text": "We tighten what exists. Nothing more.", "next": "b3_decide" }
+          ]
+        },
+        {
+          "id": "b3_decide",
+          "speaker": "Narrator",
+          "text": "The room is quiet. Whatever you recommend will shape the Criminal Law Amendment Act. It will govern every medico-legal examination in India for the next decade. The question is not what the law permits — but who the law is for.",
+          "options": [
+            { "text": "Rewrite the framework. Care first.", "next": "b4_rewrote" },
+            { "text": "Amend the framework. Keep it familiar.", "next": "b4_amended" }
+          ]
+        },
+        {
+          "id": "b4_rewrote",
+          "speaker": "Narrator",
+          "text": "Your committee recommends sweeping reforms. Parliament enacts the Criminal Law Amendment Act 2013. The MoHFW 2014 Guidelines follow — survivor-centered care, informed consent, and the ban on the two-finger test. The law no longer examines the survivor to prove the crime; it cares for her because the crime was done.",
+          "options": [
+            { "text": "Add this to my case file.", "next": "END", "ending": "rewrote" }
+          ]
+        },
+        {
+          "id": "b4_amended",
+          "speaker": "Narrator",
+          "text": "Your committee recommends targeted amendments. The framework remains. The survivor is still examined, still doubted, still treated as evidence. Some changes are made — penalties, timelines — but the process itself does not change. It will take another decade before anyone proposes what you chose not to.",
+          "options": [
+            { "text": "Add this to my case file.", "next": "END", "ending": "amended" }
+          ]
+        }
       ],
       "outcome": "The Committee recommends sweeping reforms. Parliament enacts the Criminal Law Amendment Act 2013. The MoHFW 2014 Guidelines follow.",
-      "whatChanged": "The law shifts from evidence-collection to survivor care. The two-finger test is banned. The framework prioritizes dignity, consent, and recovery.",
-      "whoBuiltOnThis": "The 2013 Amendment and the BNSS 2023 are the current framework. The quest ends here. But the story continues with every case that follows."
+      "whatChanged": "The law shifts from evidence-collection to survivor care. The two-finger test is banned.",
+      "notebookEntry": "Delhi, 2013 — Verma rewrote the law around survivor care. The law can protect the living, not just punish the dead."
     }
   ]
 }
