@@ -345,8 +345,31 @@ function renderCompletion() {
   });
 }
 
+
+// ===== Debug view (?debug=1) =====
+function renderDebug() {
+  const log = JSON.parse(localStorage.getItem(LOG_KEY) || '[]');
+  const progress = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+  const summary = {};
+  log.forEach(e => summary[e.event] = (summary[e.event] || 0) + 1);
+  render(`
+    <div class="entry" style="text-align:left; padding:24px">
+      <h1>Debug — Local Log</h1>
+      <h3>Roll: ${progress.rollNumber || '(none)'}</h3>
+      <h3>Device: ${localStorage.getItem('fq-device-id') || '(none)'}</h3>
+      <h3>Events: ${log.length}</h3>
+      <h3>Summary:</h3>
+      <pre style="background:#fff; padding:12px; border-radius:4px; overflow:auto">${JSON.stringify(summary, null, 2)}</pre>
+      <h3>Raw log:</h3>
+      <pre style="background:#fff; padding:12px; border-radius:4px; overflow:auto; max-height:60vh">${JSON.stringify(log, null, 2)}</pre>
+      <button class="btn-secondary" onclick="localStorage.clear(); location.reload()">Clear all local data</button>
+    </div>
+  `);
+}
+
 // ===== Boot =====
 (async function init() {
+  if (new URLSearchParams(location.search).get('debug') === '1') { renderDebug(); return; }
   try {
     await loadData();
     const hasProgress = loadProgress();
