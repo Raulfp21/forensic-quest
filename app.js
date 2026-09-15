@@ -72,6 +72,16 @@ function render(html) {
   document.getElementById('app').innerHTML = html;
 }
 
+// ===== Motion helper =====
+// Wraps GSAP calls so the app still works if the CDN script didn't load
+// (e.g. first visit was offline). Falls back to instant, unanimated display.
+function animate(selector, fromVars, toVars) {
+  if (!window.gsap) return;
+  document.querySelectorAll(selector).forEach((el) => {
+    gsap.fromTo(el, fromVars, { ...toVars, clearProps: 'transform,filter' });
+  });
+}
+
 // ===== Entry =====
 function renderEntry() {
   const options = rollNumbers.students
@@ -87,6 +97,9 @@ function renderEntry() {
       <button id="begin">Begin</button>
     </div>
   `);
+
+  animate('.entry h1', { opacity: 0, y: -12 }, { opacity: 1, y: 0, duration: 0.9, ease: 'power2.out' });
+  animate('.entry .subtitle', { opacity: 0 }, { opacity: 1, duration: 1, delay: 0.3, ease: 'power1.out' });
 
   document.getElementById('begin').addEventListener('click', () => {
     const roll = document.getElementById('roll').value;
@@ -144,6 +157,13 @@ function renderMap() {
     ${notebookHTML}
     <div class="timeline">${nodes}</div>
   `);
+
+  if (window.gsap) {
+    gsap.from('.quest-node', {
+      opacity: 0, x: -16, duration: 0.5, stagger: 0.08, ease: 'power2.out',
+      clearProps: 'transform',
+    });
+  }
 
   document.querySelectorAll('.quest-node:not(.locked)').forEach((el) => {
     el.addEventListener('click', () => {
@@ -222,6 +242,18 @@ function renderQuest(q, beatId) {
     </div>
   `);
 
+  if (window.gsap) {
+    gsap.from('.portrait-wrap', {
+      opacity: 0, y: -24, rotate: -6, duration: 0.7, ease: 'power2.out', clearProps: 'transform',
+    });
+    gsap.from('.scene', {
+      opacity: 0, y: 20, duration: 0.6, delay: 0.15, ease: 'power2.out', clearProps: 'transform',
+    });
+    gsap.from('.option-btn', {
+      opacity: 0, x: -14, duration: 0.4, delay: 0.45, stagger: 0.12, ease: 'power2.out', clearProps: 'transform',
+    });
+  }
+
   document.querySelectorAll('.option-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       const i = parseInt(btn.dataset.index, 10);
@@ -289,6 +321,15 @@ function renderOutcome(q, ending) {
     </div>
   `);
 
+  if (window.gsap) {
+    gsap.from('.outcome-box', {
+      opacity: 0, scale: 0.97, duration: 0.5, ease: 'power2.out', clearProps: 'transform',
+    });
+    gsap.from('.what-changed', {
+      opacity: 0, y: 12, duration: 0.5, delay: 0.2, ease: 'power2.out', clearProps: 'transform',
+    });
+  }
+
   document.getElementById('continue').addEventListener('click', () => {
     if (state.completedQuests.length === questsData.quests.length) {
       renderCompletion();
@@ -324,6 +365,11 @@ function renderCompletion() {
       </div>
     </div>
   `);
+
+  if (window.gsap) {
+    gsap.from('.completion h1', { opacity: 0, y: -10, duration: 0.8, ease: 'power2.out' });
+    gsap.from('.completion .summary', { opacity: 0, duration: 0.9, delay: 0.25, ease: 'power1.out' });
+  }
 
   document.getElementById('sync').addEventListener('click', async (e) => {
     await syncLog();

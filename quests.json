@@ -15,7 +15,7 @@
         {
           "id": "b1",
           "speaker": "Clerk",
-          "text": "Doctor Bulkley. The Governor has sent word. The town says Browne poisoned Wheeler — that the pearls he ground were laced with arsenic. The Governor asks what you intend to do.",
+          "text": "Doctor Bulkley. The Governor has sent word. Samuel Browne has sent a signed note himself — he says his servant ground Wheeler's medicine in a mortar that had held arsenic, and that the death is his doing. The Governor asks what you intend to do.",
           "options": [
             { "text": "Tell him I will open the body at dawn.", "next": "b2_open" },
             { "text": "Tell him the law will decide. I will not interfere.", "next": "b2_refuse" },
@@ -61,7 +61,7 @@
         {
           "id": "b4_open_body",
           "speaker": "Narrator",
-          "text": "You open James Wheeler's body. There is no arsenic in the stomach, no unusual discoloration, no sign of poison. The truth is plain: Browne did not poison him. By dawn, the whole town knows a body was opened in Madras — and that it had spoken.",
+          "text": "You open James Wheeler's body. What you find does not settle the matter cleanly — there is no chemistry yet to test for arsenic, only what your own eyes can swear to, and that is not enough to prove or disprove poison. Your report goes to the court alongside Browne's confession. In the end, the grand jury returns a verdict of insufficient evidence, and Browne — despite his own written confession — is acquitted. But something else has happened: for the first time, a body has been formally examined for the law, not simply believed or disbelieved on reputation. By dawn, the whole town knows a body was opened in Madras.",
           "options": [
             { "text": "Add this to my case file.", "next": "END", "ending": "open" }
           ]
@@ -69,15 +69,15 @@
         {
           "id": "b4_no_body",
           "speaker": "Narrator",
-          "text": "You close the case. Browne is tried on rumor. He is acquitted, but only because no one could prove what they suspected. No precedent is set. No body speaks. It will be another century before a physician in India dares to open a body in a legal case.",
+          "text": "You close the case. Browne is tried on his written confession alone — no body is examined, no physician is asked to look. He is acquitted anyway; a confession without an examination to weigh against it is not enough to convict. No precedent is set. No body speaks. It will be years before a physician in India is again asked to open a body in a legal case.",
           "options": [
             { "text": "Add this to my case file.", "next": "END", "ending": "closed" }
           ]
         }
       ],
-      "outcome": "Bulkley opens the body. No arsenic found. Samuel Browne is acquitted. The first complete medico-legal autopsy in India has been performed.",
-      "whatChanged": "The body becomes a legal witness. Forensic medicine in India begins in Madras, 1693.",
-      "notebookEntry": "Madras, 1693 — The first autopsy in India. Bulkley opened Wheeler. No arsenic. Browne walked free. The body had testified."
+      "outcome": "Bulkley opens the body. His findings are inconclusive by modern standards — there was no chemistry yet to confirm or rule out poison. Browne is acquitted despite his own written confession, and India's first medico-legal autopsy is on record.",
+      "whatChanged": "The body becomes something the law can formally examine, even against a confession. Forensic medicine in India begins in Madras, 1693.",
+      "notebookEntry": "Madras, 1693 — The first autopsy in India. Bulkley opened Wheeler despite Browne's confession. The finding was inconclusive, but the body had been examined — and that became the precedent."
     },
     {
       "id": "marsh-1836",
@@ -169,7 +169,7 @@
         {
           "id": "b1",
           "speaker": "Judge",
-          "text": "Monsieur Orfila. You have tested the sample from Madame Lafarge's household. You have produced a mirror on glass. The defense says a chemist's trick proves nothing. What do you tell this court?",
+          "text": "Monsieur Orfila. Local doctors have already tested Monsieur Lafarge's remains for arsenic — and found none. The defense is telling the jury the poisoning charge has collapsed. The prosecution believes that first test was rushed and wants you to test again, more carefully. What do you tell this court?",
           "options": [
             { "text": "I will explain the test. Step by step, so the jury may judge.", "next": "b2_explain" },
             { "text": "I will submit my report in writing. That should suffice.", "next": "b2_written" },
@@ -206,7 +206,7 @@
         {
           "id": "b3_decide",
           "speaker": "Narrator",
-          "text": "The courtroom is silent. Every eye is on you. To speak is to invent a role that does not yet exist — the expert witness. To decline is to let poison remain a matter of rumor. This is the moment the courtroom learns whether science can testify.",
+          "text": "The courtroom is silent. Every eye is on you. Doctors already testified earlier in this trial — but their test failed, and the defense is using that failure. For your word to count for more than theirs, your test has to survive a challenge that theirs did not. This is the moment the courtroom learns whether careful, checkable science can succeed where a rushed test failed.",
           "options": [
             { "text": "Take the stand. Explain the test.", "next": "b4_testified" },
             { "text": "Remain silent. Let the court decide without you.", "next": "b4_silent" }
@@ -215,7 +215,7 @@
         {
           "id": "b4_testified",
           "speaker": "Narrator",
-          "text": "You take the stand. You explain the Marsh Test in plain language. You pass the sample through the tube. The jury sees the mirror. They see arsenic — not a chemist's claim, but a fact they can witness. Madame Lafarge is convicted. From this day, chemistry is evidence.",
+          "text": "You take the stand. You explain where the first test went wrong, then repeat it yourself — testing not only the remains but the soil around them, to rule out contamination. The jury watches the mirror form on the glass, and sees the soil test come back clean. Not a chemist's claim, but a result they can watch happen and understand why it holds up. Madame Lafarge is convicted. From this day, chemistry that can be checked is evidence — chemistry that can't is just a claim.",
           "options": [
             { "text": "Add this to my case file.", "next": "END", "ending": "testified" }
           ]
@@ -223,15 +223,15 @@
         {
           "id": "b4_silent",
           "speaker": "Narrator",
-          "text": "You remain seated. The court decides on reputation, rumor, and character. The verdict is uncertain. It will be years before chemistry is admitted as evidence in a French courtroom — and other poisoners will benefit from the delay.",
+          "text": "You remain seated. The court is left with a failed test and a defense confident in reasonable doubt. The verdict is uncertain. It will be others, not you, who show that a chemist's test can be trusted only when it can be checked and repeated by anyone who doubts it.",
           "options": [
             { "text": "Add this to my case file.", "next": "END", "ending": "silent" }
           ]
         }
       ],
-      "outcome": "Orfila testifies. Lafarge is convicted. Forensic toxicology enters the courtroom.",
-      "whatChanged": "Poison is no longer a matter of suspicion. It can be proven — and the proof can be trusted by a jury.",
-      "notebookEntry": "Paris, 1840 — Orfila carried the Marsh Test into court. Detection alone is not evidence; someone must make it legible to the jury."
+      "outcome": "Orfila retests the remains and the surrounding soil, finding arsenic in the body alone. Lafarge is convicted. Forensic toxicology earns the courtroom's trust not by claiming authority, but by surviving a challenge a rushed test could not.",
+      "whatChanged": "Poison is no longer settled by whichever test came first. It has to hold up to being checked — and once it can be checked, it can be trusted by a jury.",
+      "notebookEntry": "Paris, 1840 — Orfila repeated a test that had failed once already, and made it hold: arsenic in the body, none in the soil. Detection alone isn't evidence; it has to survive being doubted."
     },
     {
       "id": "henry-1897",
