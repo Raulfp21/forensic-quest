@@ -45,6 +45,8 @@ function loadProgress() {
 
 // ===== Logging for engagement tracking =====
 function logEvent(eventType, payload = {}) {
+  // Skip logging for the teacher/test account
+  if (state.rollNumber === 'TEACHER-TEST') return;
   try {
     const log = JSON.parse(localStorage.getItem(LOG_KEY) || '[]');
     log.push({
@@ -80,8 +82,8 @@ function render(html) {
 }
 
 function renderEntry() {
-  const options = rollNumbers.rollNumbers
-    .map((r) => `<option value="${r}">${r}</option>`)
+  const options = rollNumbers.students
+    .map((s) => `<option value="${s.reg}">${s.reg} — ${s.name}</option>`)
     .join('');
 
   render(`

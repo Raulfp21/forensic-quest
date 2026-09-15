@@ -1,6 +1,1020 @@
 {
-  "rollNumbers": [
-    "CS23-001", "CS23-002", "CS23-003", "CS23-004", "CS23-005",
-    "CS23-006", "CS23-007", "CS23-008", "CS23-009", "CS23-010"
+  "students": [
+    {
+      "reg": "TEACHER-TEST",
+      "name": "Teacher / Test Account"
+    },
+    {
+      "reg": "520025506001",
+      "name": "AAGASH K S"
+    },
+    {
+      "reg": "520025506002",
+      "name": "ABINAYAPRIYA V"
+    },
+    {
+      "reg": "520025506003",
+      "name": "ABINESH S"
+    },
+    {
+      "reg": "520025506004",
+      "name": "AFIFAH RIFAI"
+    },
+    {
+      "reg": "520025506005",
+      "name": "AFRAAH B"
+    },
+    {
+      "reg": "520025506006",
+      "name": "AFRIN FAZILA F"
+    },
+    {
+      "reg": "520025506007",
+      "name": "AFSANA SYED KAREEM"
+    },
+    {
+      "reg": "520025506008",
+      "name": "AHUL VIKRAMA J"
+    },
+    {
+      "reg": "520025506009",
+      "name": "AISHWARYA ELAVARASAN"
+    },
+    {
+      "reg": "520025506010",
+      "name": "AKASH S"
+    },
+    {
+      "reg": "520025506011",
+      "name": "AKSHAYA A V K"
+    },
+    {
+      "reg": "520025506012",
+      "name": "AKSHAYA R"
+    },
+    {
+      "reg": "520025506013",
+      "name": "ANGEL D"
+    },
+    {
+      "reg": "520025506014",
+      "name": "ANNIE UDHAIYA RITTIHA G T"
+    },
+    {
+      "reg": "520025506015",
+      "name": "ARAVINTH A"
+    },
+    {
+      "reg": "520025506016",
+      "name": "ARAVINTH SIVA R"
+    },
+    {
+      "reg": "520025506017",
+      "name": "ARCHANA R"
+    },
+    {
+      "reg": "520025506018",
+      "name": "ARIVARASU J"
+    },
+    {
+      "reg": "520025506019",
+      "name": "ARIVUKARASU M K"
+    },
+    {
+      "reg": "520025506020",
+      "name": "ARIVUMATHI S"
+    },
+    {
+      "reg": "520025506021",
+      "name": "ARUDRAA R M"
+    },
+    {
+      "reg": "520025506022",
+      "name": "ARULYA S"
+    },
+    {
+      "reg": "520025506023",
+      "name": "ASHIFA SARDAR AMEER ALI"
+    },
+    {
+      "reg": "520025506024",
+      "name": "ASMITHA GANESH"
+    },
+    {
+      "reg": "520025506025",
+      "name": "ASWATH S"
+    },
+    {
+      "reg": "520025506026",
+      "name": "ASWIN K"
+    },
+    {
+      "reg": "520025506027",
+      "name": "AYDIN SIRAZ"
+    },
+    {
+      "reg": "520025506028",
+      "name": "AYISHA A"
+    },
+    {
+      "reg": "520025506029",
+      "name": "BALA MURUGAN A V"
+    },
+    {
+      "reg": "520025506030",
+      "name": "BALAJI B"
+    },
+    {
+      "reg": "520025506031",
+      "name": "BALAJI R"
+    },
+    {
+      "reg": "520025506032",
+      "name": "BALAJI S"
+    },
+    {
+      "reg": "520025506033",
+      "name": "BARATH THIRUMALAI R"
+    },
+    {
+      "reg": "520025506034",
+      "name": "BAVA DARANI J"
+    },
+    {
+      "reg": "520025506035",
+      "name": "BHAVANA H"
+    },
+    {
+      "reg": "520025506036",
+      "name": "BHAVANA K"
+    },
+    {
+      "reg": "520025506037",
+      "name": "CIBI DHARUNI K"
+    },
+    {
+      "reg": "520025506038",
+      "name": "DANISH KISHORE R"
+    },
+    {
+      "reg": "520025506039",
+      "name": "DEEPA K S"
+    },
+    {
+      "reg": "520025506040",
+      "name": "DEEPASRI C"
+    },
+    {
+      "reg": "520025506041",
+      "name": "DEEPIKA M S"
+    },
+    {
+      "reg": "520025506042",
+      "name": "DEVADHARSHINI A"
+    },
+    {
+      "reg": "520025506043",
+      "name": "DHAHIRA SHEREEN J"
+    },
+    {
+      "reg": "520025506044",
+      "name": "DHANWANTH RAAJAA S A"
+    },
+    {
+      "reg": "520025506045",
+      "name": "DHANYA T"
+    },
+    {
+      "reg": "520025506046",
+      "name": "DHARANI DHARAN M"
+    },
+    {
+      "reg": "520025506047",
+      "name": "DHARSHANA SRI M K"
+    },
+    {
+      "reg": "520025506048",
+      "name": "DHARSHINI M"
+    },
+    {
+      "reg": "520025506049",
+      "name": "DHARSHINI M"
+    },
+    {
+      "reg": "520025506050",
+      "name": "DHARUN S"
+    },
+    {
+      "reg": "520025506051",
+      "name": "DHASVANDH SREE V S"
+    },
+    {
+      "reg": "520025506052",
+      "name": "DHAYANITHI M V"
+    },
+    {
+      "reg": "520025506053",
+      "name": "DHIVIYASREE VE"
+    },
+    {
+      "reg": "520025506054",
+      "name": "DHIVYANTH M"
+    },
+    {
+      "reg": "520025506055",
+      "name": "DINESHKARTHICK B"
+    },
+    {
+      "reg": "520025506056",
+      "name": "DIVYA PRABHA S R"
+    },
+    {
+      "reg": "520025506057",
+      "name": "DONA PRINCY A"
+    },
+    {
+      "reg": "520025506058",
+      "name": "DURGADEVI S"
+    },
+    {
+      "reg": "520025506059",
+      "name": "EISEN GABRIEL S"
+    },
+    {
+      "reg": "520025506060",
+      "name": "ENIYA YUGENDHIRA K"
+    },
+    {
+      "reg": "520025506061",
+      "name": "ENIYAN S"
+    },
+    {
+      "reg": "520025506062",
+      "name": "FIDAL CASTRO C"
+    },
+    {
+      "reg": "520025506063",
+      "name": "GANAPATHY PRASANNA SV"
+    },
+    {
+      "reg": "520025506064",
+      "name": "GANGASRI S"
+    },
+    {
+      "reg": "520025506065",
+      "name": "GNANA SOWNDARYA R K"
+    },
+    {
+      "reg": "520025506066",
+      "name": "GNANAPRIYADHARSHINI C"
+    },
+    {
+      "reg": "520025506067",
+      "name": "GOMATHY S"
+    },
+    {
+      "reg": "520025506068",
+      "name": "GOPALAKRISHNNAN R"
+    },
+    {
+      "reg": "520025506069",
+      "name": "GOWSHIK VISVA V"
+    },
+    {
+      "reg": "520025506070",
+      "name": "GURUPRASATH G"
+    },
+    {
+      "reg": "520025506071",
+      "name": "HARIHARAN J"
+    },
+    {
+      "reg": "520025506072",
+      "name": "HARINI C"
+    },
+    {
+      "reg": "520025506073",
+      "name": "HARINI M"
+    },
+    {
+      "reg": "520025506074",
+      "name": "HARINI MA"
+    },
+    {
+      "reg": "520025506075",
+      "name": "HARINI P"
+    },
+    {
+      "reg": "520025506076",
+      "name": "HARINI T"
+    },
+    {
+      "reg": "520025506077",
+      "name": "HARISH BALAJI R"
+    },
+    {
+      "reg": "520025506078",
+      "name": "HARSHITHA S K"
+    },
+    {
+      "reg": "520025506079",
+      "name": "HARSNI R"
+    },
+    {
+      "reg": "520025506080",
+      "name": "INDHUMATHI C"
+    },
+    {
+      "reg": "520025506081",
+      "name": "INDRA PRIYADHARSHINI G"
+    },
+    {
+      "reg": "520025506082",
+      "name": "IRFANA FATHIMA M"
+    },
+    {
+      "reg": "520025506083",
+      "name": "JAANAV M"
+    },
+    {
+      "reg": "520025506084",
+      "name": "JAPHIA ANGELIN A"
+    },
+    {
+      "reg": "520025506085",
+      "name": "JAYARAJ M"
+    },
+    {
+      "reg": "520025506086",
+      "name": "JAYASHREE K"
+    },
+    {
+      "reg": "520025506087",
+      "name": "JEEVANA RANJITH KUMAR"
+    },
+    {
+      "reg": "520025506088",
+      "name": "JENNATH FARHANA"
+    },
+    {
+      "reg": "520025506089",
+      "name": "JENOLIN PERCY J M"
+    },
+    {
+      "reg": "520025506090",
+      "name": "JERLIN JOY I"
+    },
+    {
+      "reg": "520025506091",
+      "name": "JEYA SREE K"
+    },
+    {
+      "reg": "520025506092",
+      "name": "KAAVIYA RAMESH KUMAR"
+    },
+    {
+      "reg": "520025506093",
+      "name": "KALIDASAN S BISWAS"
+    },
+    {
+      "reg": "520025506094",
+      "name": "KANIMOZHI M"
+    },
+    {
+      "reg": "520025506095",
+      "name": "KARTHIK KUMAR S K"
+    },
+    {
+      "reg": "520025506096",
+      "name": "KAVITHA M"
+    },
+    {
+      "reg": "520025506097",
+      "name": "KAVIYA M"
+    },
+    {
+      "reg": "520025506098",
+      "name": "KAVYA RAJI P"
+    },
+    {
+      "reg": "520025506099",
+      "name": "KAWSIKA L M"
+    },
+    {
+      "reg": "520025506100",
+      "name": "KEERTHANA P"
+    },
+    {
+      "reg": "520025506101",
+      "name": "KRITVIN ADHITHYA S"
+    },
+    {
+      "reg": "520025506102",
+      "name": "LALITH AADITHYA VENGATACHALAM"
+    },
+    {
+      "reg": "520025506103",
+      "name": "LEYA WINCY J"
+    },
+    {
+      "reg": "520025506104",
+      "name": "LOGANATHAN J"
+    },
+    {
+      "reg": "520025506105",
+      "name": "MAHALEKSHMI I U"
+    },
+    {
+      "reg": "520025506106",
+      "name": "MAHATHI J"
+    },
+    {
+      "reg": "520025506107",
+      "name": "MANOJ R G"
+    },
+    {
+      "reg": "520025506108",
+      "name": "MATHAN BALU"
+    },
+    {
+      "reg": "520025506109",
+      "name": "MAYUSHA BANDARAPU"
+    },
+    {
+      "reg": "520025506110",
+      "name": "MEGAVARSHINI T"
+    },
+    {
+      "reg": "520025506111",
+      "name": "MIRUDHULA K"
+    },
+    {
+      "reg": "520025506112",
+      "name": "MITHRA S"
+    },
+    {
+      "reg": "520025506113",
+      "name": "MOHAMED MAGDUM ATHIL K"
+    },
+    {
+      "reg": "520025506114",
+      "name": "MOHAMED RIZWAN A"
+    },
+    {
+      "reg": "520025506115",
+      "name": "MOHANGANDHI K"
+    },
+    {
+      "reg": "520025506116",
+      "name": "MOULISH M"
+    },
+    {
+      "reg": "520025506117",
+      "name": "MUGILRAJ N"
+    },
+    {
+      "reg": "520025506118",
+      "name": "MUJAAHID N"
+    },
+    {
+      "reg": "520025506119",
+      "name": "NANTHANA A S"
+    },
+    {
+      "reg": "520025506120",
+      "name": "NAVEEN M"
+    },
+    {
+      "reg": "520025506121",
+      "name": "NAVEENRAJ"
+    },
+    {
+      "reg": "520025506122",
+      "name": "NEERAJ SRINIVAS P S S"
+    },
+    {
+      "reg": "520025506123",
+      "name": "NIRAIMATHI K"
+    },
+    {
+      "reg": "520025506124",
+      "name": "NIRANJANA A"
+    },
+    {
+      "reg": "520025506125",
+      "name": "NIRBHAVA S"
+    },
+    {
+      "reg": "520025506126",
+      "name": "NITHIN R K"
+    },
+    {
+      "reg": "520025506127",
+      "name": "NITHISRAJ S"
+    },
+    {
+      "reg": "520025506128",
+      "name": "NIVEDHITHA T"
+    },
+    {
+      "reg": "520025506129",
+      "name": "NIVETHINI P"
+    },
+    {
+      "reg": "520025506130",
+      "name": "PADMESH V"
+    },
+    {
+      "reg": "520025506131",
+      "name": "POOJA D"
+    },
+    {
+      "reg": "520025506132",
+      "name": "POOJA RESHMI P"
+    },
+    {
+      "reg": "520025506133",
+      "name": "PRABHANJANAA V K"
+    },
+    {
+      "reg": "520025506134",
+      "name": "PRAHADISWARAN R"
+    },
+    {
+      "reg": "520025506135",
+      "name": "PRAKADHEESH DAKSHINAMOORTHY"
+    },
+    {
+      "reg": "520025506136",
+      "name": "PRAMOTHRAJU C K"
+    },
+    {
+      "reg": "520025506137",
+      "name": "PRANAVVEL B S"
+    },
+    {
+      "reg": "520025506138",
+      "name": "PRATHISHA C"
+    },
+    {
+      "reg": "520025506139",
+      "name": "PRAVEEN KUMAR J"
+    },
+    {
+      "reg": "520025506140",
+      "name": "PRAVEENA K K"
+    },
+    {
+      "reg": "520025506141",
+      "name": "PREETHI N"
+    },
+    {
+      "reg": "520025506142",
+      "name": "PREETHI S"
+    },
+    {
+      "reg": "520025506143",
+      "name": "PRINCY N"
+    },
+    {
+      "reg": "520025506144",
+      "name": "PRINCY IDA P"
+    },
+    {
+      "reg": "520025506145",
+      "name": "PRITHISWARAN V"
+    },
+    {
+      "reg": "520025506146",
+      "name": "PRITHIVI RAJ R"
+    },
+    {
+      "reg": "520025506147",
+      "name": "PRIYA JUSTUS"
+    },
+    {
+      "reg": "520025506148",
+      "name": "PRIYADHARSHINI G"
+    },
+    {
+      "reg": "520025506149",
+      "name": "PRIYADHARSHINI M"
+    },
+    {
+      "reg": "520025506150",
+      "name": "PRIYADHARSHINI R"
+    },
+    {
+      "reg": "520025506151",
+      "name": "PRIYANKA G"
+    },
+    {
+      "reg": "520025506152",
+      "name": "PUBARNIKA T"
+    },
+    {
+      "reg": "520025506153",
+      "name": "RAFATH ARA M"
+    },
+    {
+      "reg": "520025506154",
+      "name": "RAGAV R"
+    },
+    {
+      "reg": "520025506155",
+      "name": "RAGHUL VIDHARSHAN D R"
+    },
+    {
+      "reg": "520025506156",
+      "name": "RAHUL S"
+    },
+    {
+      "reg": "520025506157",
+      "name": "RAJAPRIYAN S"
+    },
+    {
+      "reg": "520025506158",
+      "name": "RAMAJAYAM S"
+    },
+    {
+      "reg": "520025506159",
+      "name": "RASHMA S"
+    },
+    {
+      "reg": "520025506160",
+      "name": "RENUGA PERIYASAMY"
+    },
+    {
+      "reg": "520025506161",
+      "name": "RIDHANYA R"
+    },
+    {
+      "reg": "520025506162",
+      "name": "RISANA SULFIYYA M"
+    },
+    {
+      "reg": "520025506163",
+      "name": "RITHIK ROSHAN E"
+    },
+    {
+      "reg": "520025506164",
+      "name": "RITHISHKA P"
+    },
+    {
+      "reg": "520025506165",
+      "name": "ROHITH KUMAR M S"
+    },
+    {
+      "reg": "520025506166",
+      "name": "RUPA SRI S"
+    },
+    {
+      "reg": "520025506167",
+      "name": "SABARI DHANUSH C"
+    },
+    {
+      "reg": "520025506168",
+      "name": "SABARI VIKRAM S"
+    },
+    {
+      "reg": "520025506169",
+      "name": "SACHIN A"
+    },
+    {
+      "reg": "520025506170",
+      "name": "SAKTHIDAR B"
+    },
+    {
+      "reg": "520025506171",
+      "name": "SANCHIT K"
+    },
+    {
+      "reg": "520025506172",
+      "name": "SANDHIYASRI S"
+    },
+    {
+      "reg": "520025506173",
+      "name": "SANJANA S"
+    },
+    {
+      "reg": "520025506174",
+      "name": "SANJAY SAKTHIVEL S"
+    },
+    {
+      "reg": "520025506175",
+      "name": "SANTHOSH S"
+    },
+    {
+      "reg": "520025506176",
+      "name": "SARAVANAN A S"
+    },
+    {
+      "reg": "520025506177",
+      "name": "SARAYU M N"
+    },
+    {
+      "reg": "520025506178",
+      "name": "SARRON S"
+    },
+    {
+      "reg": "520025506179",
+      "name": "SARVESH P"
+    },
+    {
+      "reg": "520025506180",
+      "name": "SELVADHARSINI"
+    },
+    {
+      "reg": "520025506181",
+      "name": "SHAFIYA FAHEEMA FAIZUR RAHMAN"
+    },
+    {
+      "reg": "520025506182",
+      "name": "SHAKTHEESHWARI S"
+    },
+    {
+      "reg": "520025506183",
+      "name": "SHAKTHI NA"
+    },
+    {
+      "reg": "520025506184",
+      "name": "SHANMUGA PRIYA N"
+    },
+    {
+      "reg": "520025506185",
+      "name": "SHANMUGAPRIYAN V"
+    },
+    {
+      "reg": "520025506186",
+      "name": "SHARON KRUTHI J"
+    },
+    {
+      "reg": "520025506187",
+      "name": "SHILPA SURESH S B"
+    },
+    {
+      "reg": "520025506188",
+      "name": "SHIVA PALANIKUMAR V"
+    },
+    {
+      "reg": "520025506189",
+      "name": "SHRIDHARSHINI J"
+    },
+    {
+      "reg": "520025506190",
+      "name": "SHRINIKESH A"
+    },
+    {
+      "reg": "520025506191",
+      "name": "SHYAMIKA PANDI P"
+    },
+    {
+      "reg": "520025506192",
+      "name": "SIBI AR"
+    },
+    {
+      "reg": "520025506193",
+      "name": "SIVA S"
+    },
+    {
+      "reg": "520025506194",
+      "name": "SIVAMANIKANDAN P"
+    },
+    {
+      "reg": "520025506195",
+      "name": "SNEGHAN C"
+    },
+    {
+      "reg": "520025506196",
+      "name": "SOWMIYA R P"
+    },
+    {
+      "reg": "520025506197",
+      "name": "SOWMYA PANDY SRI P M"
+    },
+    {
+      "reg": "520025506198",
+      "name": "SRI HARINI M"
+    },
+    {
+      "reg": "520025506199",
+      "name": "SRI MADHUMITHA P"
+    },
+    {
+      "reg": "520025506200",
+      "name": "SRI VAISHNAVI K"
+    },
+    {
+      "reg": "520025506201",
+      "name": "SRIDURGA S"
+    },
+    {
+      "reg": "520025506202",
+      "name": "SRILEKHA S"
+    },
+    {
+      "reg": "520025506203",
+      "name": "SRIMATHI S"
+    },
+    {
+      "reg": "520025506204",
+      "name": "SRIMITHRA S"
+    },
+    {
+      "reg": "520025506205",
+      "name": "SRINATH RAMESH"
+    },
+    {
+      "reg": "520025506206",
+      "name": "SRIPRADAN N"
+    },
+    {
+      "reg": "520025506207",
+      "name": "SRIVISHNU K S"
+    },
+    {
+      "reg": "520025506208",
+      "name": "SRIWIN S"
+    },
+    {
+      "reg": "520025506209",
+      "name": "SRUTHILAYA S"
+    },
+    {
+      "reg": "520025506210",
+      "name": "SUBBULAKSHMI P"
+    },
+    {
+      "reg": "520025506211",
+      "name": "SUBRAJA S R"
+    },
+    {
+      "reg": "520025506212",
+      "name": "SUDHA RAMAN A P"
+    },
+    {
+      "reg": "520025506213",
+      "name": "SUGANDHAN M"
+    },
+    {
+      "reg": "520025506214",
+      "name": "SUGIRTHA M P"
+    },
+    {
+      "reg": "520025506215",
+      "name": "SUHEERA IZZADH S"
+    },
+    {
+      "reg": "520025506216",
+      "name": "SUHITRA A"
+    },
+    {
+      "reg": "520025506217",
+      "name": "SUPRIYA G"
+    },
+    {
+      "reg": "520025506218",
+      "name": "SURIDI C S"
+    },
+    {
+      "reg": "520025506219",
+      "name": "SUTHARSAN P"
+    },
+    {
+      "reg": "520025506220",
+      "name": "SWETHA K"
+    },
+    {
+      "reg": "520025506221",
+      "name": "TANIKSHA BHARATHI B"
+    },
+    {
+      "reg": "520025506222",
+      "name": "TANMAYYA BALASUBRAMANIAM SELLAM"
+    },
+    {
+      "reg": "520025506223",
+      "name": "TARUN S"
+    },
+    {
+      "reg": "520025506224",
+      "name": "TARUN SRIDHAR S"
+    },
+    {
+      "reg": "520025506225",
+      "name": "THANUSHA B"
+    },
+    {
+      "reg": "520025506226",
+      "name": "THARINI M S"
+    },
+    {
+      "reg": "520025506227",
+      "name": "THARUN RAM R"
+    },
+    {
+      "reg": "520025506228",
+      "name": "THATCHINAKARTHIKEYAN RAMAKRISHNAN"
+    },
+    {
+      "reg": "520025506229",
+      "name": "THEJESH R"
+    },
+    {
+      "reg": "520025506230",
+      "name": "THINUSHIYA S"
+    },
+    {
+      "reg": "520025506231",
+      "name": "THIRUVARANGAN A"
+    },
+    {
+      "reg": "520025506232",
+      "name": "UTH AYARAJ R"
+    },
+    {
+      "reg": "520025506233",
+      "name": "VAISHNAVI S"
+    },
+    {
+      "reg": "520025506234",
+      "name": "VAISHNAVI T"
+    },
+    {
+      "reg": "520025506235",
+      "name": "VARAAHIE YOGANANDARAJ"
+    },
+    {
+      "reg": "520025506236",
+      "name": "VARSHA VARTHINI S"
+    },
+    {
+      "reg": "520025506237",
+      "name": "VASANTH RAKUEL K"
+    },
+    {
+      "reg": "520025506238",
+      "name": "VASUNTHARA R"
+    },
+    {
+      "reg": "520025506239",
+      "name": "VENKATALAKSHMI R"
+    },
+    {
+      "reg": "520025506240",
+      "name": "VETHIGA M"
+    },
+    {
+      "reg": "520025506241",
+      "name": "VIMALRAJ N S"
+    },
+    {
+      "reg": "520025506242",
+      "name": "VINOTHINI P"
+    },
+    {
+      "reg": "520025506243",
+      "name": "VISALAKSHI S"
+    },
+    {
+      "reg": "520025506244",
+      "name": "VISHWA R"
+    },
+    {
+      "reg": "520025506245",
+      "name": "VISWESH BALAJI RAVEENDRAN"
+    },
+    {
+      "reg": "520025506246",
+      "name": "YASHVANTHIKA B M"
+    },
+    {
+      "reg": "520025506247",
+      "name": "YAZHINI M"
+    },
+    {
+      "reg": "520025506248",
+      "name": "YAZHINI"
+    },
+    {
+      "reg": "520025506249",
+      "name": "YOGA SREE M"
+    },
+    {
+      "reg": "520025506250",
+      "name": "YUKESH S"
+    },
+    {
+      "reg": "520024506012",
+      "name": "AMEERUL HAQ A"
+    },
+    {
+      "reg": "520024506094",
+      "name": "KAYALVIZHI K"
+    },
+    {
+      "reg": "520024506136",
+      "name": "NEHA SENTHILKUMAR"
+    }
   ]
 }
